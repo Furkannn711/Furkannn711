@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Roll_The_Dice" customModuleProvider="target">
+            <connections>
+                <outlet property="ButtonView" destination="N8x-oJ-6Fg" id="DtH-bc-3oH"/>
+                <outlet property="DiceİmageViewOne" destination="Fhd-4T-Xk0" id="SVf-94-d2X"/>
+                <outlet property="DiceİmageViewTwo" destination="O8N-JG-Iy3" id="NGx-hS-4ga"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backİmage" translatesAutoresizingMaskIntoConstraints="NO" id="KIg-Ob-pb2">
+                    <rect key="frame" x="-10" y="0.0" width="413" height="852"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MBY-Js-F2F">
+                    <rect key="frame" x="98.666666666666686" y="159" width="196" height="128"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="c3l-Pl-fx2">
+                    <rect key="frame" x="84" y="437" width="225" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-4T-Xk0">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Sua-M3-WB8"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="O8N-JG-Iy3">
+                            <rect key="frame" x="155" y="0.0" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="5W5-yf-9gb"/>
+                                <constraint firstAttribute="height" constant="70" id="7BU-ba-Udn"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8x-oJ-6Fg">
+                    <rect key="frame" x="167" y="587" width="59.333333333333343" height="34.333333333333371"/>
+                    <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Toss">
+                        <backgroundConfiguration key="background" cornerRadius="21"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="TossButton:" destination="-1" eventType="touchUpInside" id="0sV-BP-6TA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c3l-Pl-fx2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="19P-tP-BWg"/>
+                <constraint firstItem="N8x-oJ-6Fg" firstAttribute="top" secondItem="c3l-Pl-fx2" secondAttribute="bottom" constant="80" id="Vdg-ML-mPx"/>
+                <constraint firstItem="c3l-Pl-fx2" firstAttribute="top" secondItem="MBY-Js-F2F" secondAttribute="bottom" constant="150" id="ZAO-u1-9XM"/>
+                <constraint firstItem="MBY-Js-F2F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahD-jB-2O0"/>
+                <constraint firstItem="MBY-Js-F2F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="fBw-BH-PJM"/>
+                <constraint firstItem="N8x-oJ-6Fg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lf0-nU-k3F"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Backİmage" width="1600" height="1600"/>
+        <image name="Dice1" width="100" height="100"/>
+        <image name="HomeLogo" width="196" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
